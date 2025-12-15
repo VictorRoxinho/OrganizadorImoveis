@@ -86,8 +86,29 @@ export const Highlight = styled.div`
   }
 `;
 
+export const ViewGalleryButton = styled.button`
+  padding: ${({ theme }) => theme.spacing.sm} ${({ theme }) => theme.spacing.lg};
+  background-color: transparent;
+  color: ${({ theme }) => theme.colors.secondary};
+  font-size: ${({ theme }) => theme.fontSizes.base};
+  font-weight: ${({ theme }) => theme.fontWeights.semibold};
+  border: 2px solid ${({ theme }) => theme.colors.secondary};
+  border-radius: ${({ theme }) => theme.borderRadius.base};
+  transition: all ${({ theme }) => theme.transitions.base};
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.text.white};
+    transform: translateY(-2px);
+  }
+`;
+
 export const CTAButton = styled.button`
-  margin-top: auto;
+  margin-top: ${({ theme }) => theme.spacing.xs};
   padding: ${({ theme }) => theme.spacing.sm} ${({ theme }) => theme.spacing.lg};
   background-color: ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.text.white};
