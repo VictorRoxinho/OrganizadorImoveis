@@ -86,7 +86,7 @@ export const MainImage = styled.img`
   width: 100%;
   height: 500px;
   object-fit: cover;
-  border-radius: ${({ theme }) => theme.borderRadius.xl};
+  border-radius: ${({ theme }) => theme.borderRadius.lg};
   box-shadow: ${({ theme }) => theme.shadows.lg};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
@@ -108,7 +108,7 @@ export const Thumbnail = styled.img<{ $isActive: boolean }>`
   width: 100%;
   height: 80px;
   object-fit: cover;
-  border-radius: ${({ theme }) => theme.borderRadius.md};
+  border-radius: ${({ theme }) => theme.borderRadius.base};
   cursor: pointer;
   transition: all ${({ theme }) => theme.transitions.base};
   border: 3px solid
@@ -131,7 +131,7 @@ export const PropertyDetails = styled.div`
 export const DetailSection = styled.div`
   background-color: ${({ theme }) => theme.colors.text.white};
   padding: ${({ theme }) => theme.spacing.lg};
-  border-radius: ${({ theme }) => theme.borderRadius.xl};
+  border-radius: ${({ theme }) => theme.borderRadius.lg};
   box-shadow: ${({ theme }) => theme.shadows.sm};
 `;
 
