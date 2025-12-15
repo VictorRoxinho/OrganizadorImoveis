@@ -4,7 +4,7 @@ import { Property, ClientData } from '../../types/property';
 // DADOS DO CLIENTE
 // ========================================
 export const clientData: ClientData = {
-  name: 'Maria Silva',
+  name: 'Marcos',
   region: 'Paralela',
   whatsappNumber: '5571981511131',
   brokerName: 'João Victor',
